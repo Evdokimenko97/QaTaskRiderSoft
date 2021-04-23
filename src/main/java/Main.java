@@ -10,9 +10,9 @@ public class Main {
 
     private Connection getConnection() throws SQLException {
         return DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/rider_soft",
-                "postgres",
-                "1qaz2WSX3edc");
+                "jdbc:postgresql://localhost:5432/*",
+                "*",
+                "*");
     }
 
     public void getSumSalary() {
